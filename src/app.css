@@ -1,12 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Roboto:wght@400;500;700&display=swap');
 
 
-*{
+* {
     font-family: 'Montserrat', sans-serif;
 }
 
-.toggle{
-    background-color: #793FDF;
+
+.text-primary {
+    color: rgb(130, 97, 220);
+}
+
+.text-secondary {
+    color: #2b2d42;
+}
+
+.bg-primary-gradient {
+    background-image: linear-gradient(to bottom, rgb(168, 149, 220), rgb(130, 97, 220));
+}
+
+.bg-secondary-gradient {
+    background-image: linear-gradient(90deg, rgb(168, 149, 220), rgb(130, 97, 220));
+}
+
+.bg-primary {
+    background-color: rgb(130, 97, 220);
+}
+
+
+.toggle {
+    /* background-color: rgb(140, 110, 222); */
+    background-image: linear-gradient(90deg, rgb(168, 149, 220), rgb(130, 97, 220));
     width: 70px;
     height: 40px;
     border-radius: 25px;
@@ -14,7 +37,7 @@
     overflow: hidden;
 }
 
-.toggle::before{
+.toggle::before {
     content: "";
     position: absolute;
     top: 0;
@@ -27,6 +50,11 @@
     transition: .5s;
 }
 
-.toggle.active::before{
+.toggle.active::before {
     transform: translateX(-30px) scale(-80%);
+}
+
+
+.card-shadow {
+    box-shadow: 0px 0px 20px rgb(227, 227, 227);
 }
